@@ -4,14 +4,14 @@ import { getFirestore, doc, setDoc, getDoc, updateDoc, arrayUnion, onSnapshot } 
 
 // 🔹 여기에 Firebase 프로젝트 설정 정보 추가
 const firebaseConfig = {
-    apiKey: "AIzaSyAXlqMRcQv_8AO5jgT4gOLacZoeV5OeB3o",
-    authDomain: "sakura-tree-8a6b2.firebaseapp.com",
-    projectId: "sakura-tree-8a6b2",
-    storageBucket: "sakura-tree-8a6b2.firebasestorage.app",
-    messagingSenderId: "1060509343836",
-    appId: "1:1060509343836:web:72e5edd448bfcfa4318699",
-    measurementId: "G-RYB98CRXKS"
-  };
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
+};
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

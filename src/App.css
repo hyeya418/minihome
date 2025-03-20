@@ -507,6 +507,7 @@
   color: #333;
   margin: 20px 0;
   text-align: center;
+  padding-top: 60px;
 }
 
 .message-count {
@@ -628,5 +629,10 @@
   .logout-button {
     padding: 6px 12px;
     font-size: 12px;
+  }
+
+  .page-title {
+    font-size: 20px;
+    padding-top: 50px;
   }
 }
